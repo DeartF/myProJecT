@@ -1,0 +1,142 @@
+.modal {
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 14;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+}
+
+.modal-registration {
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 14;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+}
+
+
+.modal-backdrop {
+	position: absolute;
+	z-index: 11;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+.modal-form {
+	z-index: 13;
+	width: 450px;
+	text-align: center;
+	background-color: rgba(98, 50, 50, .95);
+	box-shadow: 0 -5px 0 #d07171;
+	border-radius: 0 0 10px 10px;
+	padding-bottom: 20px;
+}
+
+.modal-form img {
+	height: 120px;
+	width: 120px;
+	margin: -60px 0 30px 0;
+	border: 5px solid #8f4e4e;
+	border-radius: 50%;
+	box-shadow: 0 -5px 0 #d07171;
+}
+
+.modal-submit {
+	padding: 13px 20px;
+	margin: 5px 0 20px 0;
+	font-size: 15px;
+	color: #fff;
+	background-color: #ff7373;
+	border: none;
+	border-bottom: 4px solid #ffe0e0;
+	cursor: pointer;
+	transition: all .5s;
+	font-family: 'Trueno';
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.modal-submit:hover{
+	background-color: #ffe0e0;
+	color: #4a1111;
+}
+
+.modal-input i {
+	position: absolute;
+	font-size: 30px;
+	padding: 10px 0 0 7px;
+	color: #b46161;
+	transition: all .3s;
+}
+
+.modal-input:hover i {
+	color: #fe9a9a;
+}
+
+.modal-input:hover input {
+	box-shadow: 2px 0px 6px rgba(255, 115, 115, 1)
+}
+
+.password-recovery {
+	color: #fff;
+}
+
+.password-recovery:hover {
+	text-decoration: none;
+}
+
+input[type = "text"] , input[type = "password"], input[type = "email"] {
+	width: 300px;
+	height: 50px;
+	font-size: 18px;
+	margin-bottom: 25px;
+	border-radius: 4px;
+	padding-left: 40px;
+	font-family: 'Nunito';	
+}
+
+input::placeholder {
+	font-family: 'Nunito';
+}
+
+
+.social > i {
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.social {
+	margin-top: 30px;
+}
+
+.social > i:hover {
+	color: #b46161;
+	background-color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.close {
+	color: #e5d8d8;
+	font-size: 30px;
+	position: relative;
+	bottom: 80px;
+	left: 36%;
+	cursor: pointer;
+	transition: .3s ease-out;
+}
+
+.close:hover {
+	transform: rotate(180deg);
+}

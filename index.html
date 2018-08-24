@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shwv</title>
+    <link rel="stylesheet" href="src/style/all.css">
+    <link rel="stylesheet" href="src/style/vendor/animate.css">
+    <link rel="stylesheet" href="src/style/vendor/css/all.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./src/img/small/favicon.png">
+  </head>
+  <body class="body"> 
+    <div id="app"> 
+      <section class="header">
+      <div class="header-inner">
+        <div class="nav">
+          <div class="nav-list animated zoomIn">
+            <li class="nav-list__item ">Support</li>
+            <li class="nav-list__item">Delivery</li>
+            <li class="nav-list__item">Legal</li>
+            <li class="nav-list__item">About us</li>
+          </div>
+        </div>
+        <div class="header-inner__info animated zoomIn">
+          <span class="header__price">$465.00 </span>
+          <span class="header__items"> 4 items </span>
+          <button class="btn btn-login" onclick="showModal()">Login</button>
+          <button class="btn btn__reg" onclick="openModalRegistration()">Register</button>
+        </div>
+      </div>
+    </section>
+    <section class="second-header">
+      <div class="second-header-inner">
+        <div class="logo animated zoomIn">
+          <img src="./src/img/small/Logo.png" alt="">
+        </div>
+        <div class="nav__second">
+          <div class="nav-list__second animated zoomIn">
+            <router-link to = "/"><li class="nav-list__item-second">Home</li></router-link>
+            <li class="nav-list__item-second">Men</li>
+            <li class="nav-list__item-second">Women</li>
+            <li class="nav-list__item-second">Children</li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <router-view>
+    
+ 		</router-view>
+    </div>
+  
+    <script src="./src/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="./src/js/components/function.js"></script>
+    <script src="./dist/build.js"></script>
+  </body>
+</html>
